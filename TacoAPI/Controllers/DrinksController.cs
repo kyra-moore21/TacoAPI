@@ -15,8 +15,7 @@ namespace TacoAPI.Controllers
         {
             if(!UserDAL.ValidateKey(ApiKey)) { return Unauthorized(); }
             List<Drink> result = dbContext.Drinks.ToList();
-            if (SortByCost != null)
-            {
+            
                 if (SortByCost.ToLower().Trim() == "ascending")
                 {
                     result = result.OrderBy(x => x.Cost).ToList();
@@ -25,12 +24,7 @@ namespace TacoAPI.Controllers
                 {
                     result = result.OrderByDescending(x => x.Cost).ToList();
                 }
-                else
-                {
-                    return NotFound();
-                }
-
-            }
+               
             return Ok(result);
         }
         [HttpGet("{id}")]
@@ -55,7 +49,7 @@ namespace TacoAPI.Controllers
             dbContext.Drinks.Add(newDrink);
             dbContext.SaveChanges();
 
-            return Created($"/api/Tacos/{newDrink.Id}", newDrink);
+            return Created($"/api/Drinks/{newDrink.Id}", newDrink);
         }
 
         [HttpPut("{id}")]
