@@ -3,15 +3,19 @@ using System.Collections.Generic;
 
 namespace TacoAPI.Models;
 
-public partial class Drink
+public partial class Combo
 {
     public int Id { get; set; }
 
     public string? Name { get; set; }
 
+    public int? TacoId { get; set; }
+
+    public int? DrinkId { get; set; }
+
     public float? Cost { get; set; }
 
-    public bool? Slushie { get; set; }
+    public virtual Drink? Drink { get; set; }
 
-    public virtual ICollection<Combo> Combos { get; set; } = new List<Combo>();
+    public virtual Taco? Taco { get; set; }
 }

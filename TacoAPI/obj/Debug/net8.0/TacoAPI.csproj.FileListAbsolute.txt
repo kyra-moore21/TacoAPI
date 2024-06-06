@@ -134,3 +134,4 @@ C:\Users\kyram\source\repos\TacoAPI\TacoAPI\obj\Debug\net8.0\refint\TacoAPI.dll
 C:\Users\kyram\source\repos\TacoAPI\TacoAPI\obj\Debug\net8.0\TacoAPI.pdb
 C:\Users\kyram\source\repos\TacoAPI\TacoAPI\obj\Debug\net8.0\TacoAPI.genruntimeconfig.cache
 C:\Users\kyram\source\repos\TacoAPI\TacoAPI\obj\Debug\net8.0\ref\TacoAPI.dll
+C:\Users\kyram\source\repos\TacoAPI\TacoAPI\obj\Debug\net8.0\TacoAPI.sourcelink.json

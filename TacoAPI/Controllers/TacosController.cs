@@ -51,8 +51,11 @@ namespace TacoAPI.Controllers
         public IActionResult DeleteById(string ApiKey, int id)
         {
             if (!UserDAL.ValidateKey(ApiKey)) { return Unauthorized(); }
+
             Taco taco = dbContext.Tacos.Find(id);
             if (taco == null) { return NotFound(); }
+            List<Combo> deletedCombos = dbContext.Combos.Where(c => c.TacoId == taco.Id).ToList();
+            dbContext.Combos.RemoveRange(deletedCombos); //takes in a list and deletes all combos within a list
             dbContext.Tacos.Remove(taco);
             dbContext.SaveChanges();
 

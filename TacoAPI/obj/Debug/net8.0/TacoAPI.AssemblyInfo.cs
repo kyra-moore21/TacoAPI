@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TacoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc7f91f48318073d21edf66c6be69cc303523e4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TacoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TacoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
